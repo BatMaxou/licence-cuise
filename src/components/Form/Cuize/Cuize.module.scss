@@ -1,0 +1,46 @@
+@import "../../../styles/variables.scss";
+
+.cuize {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-block: 10px;
+
+    .question {
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .responses {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+
+        .response {
+            min-width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $black;
+            padding: 5px;
+            margin-bottom: 5px;
+            cursor: pointer;
+
+            &:hover {
+                border-color: $primary-color
+            }
+
+            &.selected {
+                color: $primary-color;
+            }
+
+            &.correct {
+                border-color: $correct-color;
+            }
+
+            &.incorrect {
+                border-color: $incorrect-color;
+            }
+        }
+    }
+}

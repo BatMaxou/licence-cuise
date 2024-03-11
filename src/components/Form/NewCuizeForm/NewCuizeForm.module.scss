@@ -1,0 +1,37 @@
+@import '../../../styles/variables.scss';
+
+.addCuize {
+    padding-block: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    .form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+
+        > * {
+            width: 100%;
+        }
+
+        .submit {
+            margin-top: 10px;
+            width: 50%;
+        }
+
+        .error {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 16px;
+            color: $incorrect-color;
+        }
+    }
+}

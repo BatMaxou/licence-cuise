@@ -1,0 +1,39 @@
+@import './variables.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    font-size: $font-size-text;
+    padding-block: 40px;
+    accent-color: $primary-color;
+
+    h1 {
+        font-size: $font-size-main-title;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: $font-size-title;
+    }
+
+    h3 {
+        font-size: $font-size-subtitle;
+    }
+
+    a {
+        text-decoration: none;
+        color: $black;
+    }
+
+    ul {
+        li {
+            list-style: none;
+        }
+    }
+}
